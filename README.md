@@ -36,6 +36,11 @@ for more details.
 You can configure this module in the `config/autoload/xelax-user-module.global.php`
 file. All options are described there.
 
+The user state in ZfcUser is enabled and is treated as a bitmask. The least 
+significant bit is always the 'Login Allowed' state. Other modules can use other
+bits to store additional information. It is assumed, that only fife bits are used.
+You can adjust this number in the `allowed_login_states` configuration option.
+
 ## Custom user entity
 
 If you want to add attributes to the user entity, you can simply follow these
