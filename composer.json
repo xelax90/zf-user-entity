@@ -1,0 +1,31 @@
+{
+    "name": "xelax90/zf-user-entity",
+    "description": "Provides a user and role entity to work with ZfcUser, Doctrine 2 and BjyAuthorize",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Aleksandr",
+            "email": "schurix@gmx.de"
+        }
+    ],
+	"extra" : {
+		"zf" : {
+			"module" : "XelaxUserEntity"
+		}
+	},
+    "autoload": {
+        "psr-4": {
+            "XelaxUserEntity\\": "src/"
+        }
+    },
+    "require": {
+		"zf-commons/zfc-user" : "2.x-dev",
+		"zf-commons/zfc-user-doctrine-orm" : "dev-master",
+		"kokspflanze/bjy-authorize" : "^1.6",
+		"xelax90/zf2-language-route" : "^1.0"
+	},
+	"require-dev" : {
+	},
+	"suggest" : {
+	}
+}
