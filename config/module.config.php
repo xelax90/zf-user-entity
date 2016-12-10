@@ -17,4 +17,15 @@ return [
 			]
 		],
 	],
+	
+	// language options
+	'translator' => array(
+		'translation_file_patterns' => array(
+			array(
+				'type'     => 'gettext',
+				'base_dir' => __DIR__ . '/../../../zf-commons/zfc-user/src/ZfcUser/language',
+				'pattern'  => '%s.mo',
+			),
+		),
+	),
 ];
